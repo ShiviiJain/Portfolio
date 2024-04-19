@@ -1,0 +1,178 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&family=Courier+Prime&display=swap');
+
+/* Base styles and font inclusion */
+:root {
+  --pastel-blue: #a2d2ff;
+  --pastel-pink: #ffafcc;
+  --pastel-green: #bde0fe;
+  --pastel-yellow: #ffffc7;
+  --dark-gray: #333;
+  --light-gray: #f8f9fa;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 20px;
+  font-family: 'Courier Prime', monospace;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  text-align: center;
+}
+h1 {
+  margin: 20px;
+  font-family: 'Courier Prime', monospace;
+  font-weight: 2000;
+
+}
+
+h2, h3, nav .nav-links a {
+  margin: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
+
+/* Written work section */
+#written-work {
+  background-color: #e0e8f9; /* A soft pastel blue */
+  padding: 2rem;
+  border-radius: 8px; /* Optional: for rounded corners */
+  margin-top: 2rem;
+}
+
+#written-work h2 {
+  color: #a3b1c6; /* A pastel accent for headings */
+  margin-bottom: 1.5rem;
+}
+
+#written-work article {
+  margin-bottom: 1rem;
+}
+
+#written-work h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#written-work p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--pastel-blue); /* Adjust the color to fit your theme */
+  color: var(--dark-text);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--pastel-pink); /* Change color on hover */
+}
+
+header {
+  background-color: var(--pastel-blue);
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--dark-gray);
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  background-color: var(--pastel-pink);
+  border-radius: 5px;
+}
+
+.main {
+  padding: 2rem;
+}
+
+#profile {
+  text-align: center;
+  padding: 4rem 0;
+  background-color: var(--pastel-yellow);
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.intro-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.social-links {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+}
+
+.linkedin { background-image: url('./assets/linkedin.png'); }
+.github { background-image: url('./assets/github.png'); }
+.email { background-image: url('./assets/email.png'); }
+
+section {
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--pastel-green);
+}
+
+
+footer {
+  background-color: #c6e2f3; /* A soft pastel shade for footer */
+  color: var(--text-color);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 4rem;
+}
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+  }
+}
+
+
